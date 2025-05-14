@@ -1,0 +1,4 @@
+x=float(input('Digite a medida em metros: '))
+y=x*100
+z=x*1000
+print('Com base em {} metros, você tem {} centímetros e {} milímetros'.format(x,y,z))
