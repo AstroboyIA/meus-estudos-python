@@ -1,0 +1,4 @@
+x=float(input('Digite o seu a quantia em R$: '))
+y=6.61
+z=x/y
+print('Com {:.2f} reais, você consegue comprar {:.2f},dólares'.format(x,z))
