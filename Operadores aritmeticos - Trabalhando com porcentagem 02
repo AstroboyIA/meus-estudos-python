@@ -1,0 +1,4 @@
+a=float(input('Qual seu salário atual em R$?: '))
+b=a+(a*15/100)
+print('Com base no seu salário atual no valor de {} reais.'.format(a))
+print('Seu novo salario com 15% de aumento será de {:.2f} reais.'.format(b))
