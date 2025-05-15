@@ -1,0 +1,4 @@
+import math
+num=float(input('Digite um número Real: '))
+print('O valor digitado foi {} e a sua porção inteira é {}'.format(num,math.trunc(num)))
+#math.trunc é a função que quebra qualquer número apos o '.', por exemplo 9.12345; ao aplicar o math.trunc vira 9
