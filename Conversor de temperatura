@@ -1,0 +1,3 @@
+x=float(input('Informe a temperatura em °C: '))
+y=((x*9)/5)+32
+p rint('A temperatura de {}°C corresponde a {}°F!'.format(x,y))
