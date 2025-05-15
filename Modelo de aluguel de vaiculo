@@ -1,0 +1,4 @@
+dias=int(input('Por quantos dias você alugou o veículo?: '))
+distancia=int(input('Qual a distância em KM total que você percorreu com o veículo?: '))
+pagar=(dias*60)+(distancia*0.15)
+print('O valor total a pagar é de: R${:.2f}'.format(pagar))
