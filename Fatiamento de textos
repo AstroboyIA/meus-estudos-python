@@ -1,0 +1,9 @@
+#Utilize como ex a frase ' Curso em vídeo Python '
+frase = str(input('Digite uma frase: '))
+#print(frase[9]) - Ex 1: Vai mostrar a letra "V"
+#print(frase[9:13]) - Ex 2: Vai mostrar do 9 até o 13, mas o 13 não entra na mostragem, ele é o último da lista, mas não é incluso
+#print(frase[9:21]) - Ex 3: Da para usar uma unidade acima da última disponível, para assim ela ser incluída.
+#print(frase[9:21:2]) - Ex 4: Segue a mesma lógica do ex3, mas somente vai contar as células de 2 em 2.
+#print(frase[:5]) - Ex 5: Ao usar o ":" sem dígito inicial, ele vai contar da primeira célula até a do dígito final.
+#print(frase[15:]) - Ex 6: Ao usar o ":" sem dígito final, ele vai contar do 15 até a última célula.
+#print(frase[9::3]) - Ex 7: Ao usar dois "::" sem nada no meio, ele vai seguir lógica do ex6, mas contando a cada 3, até o final.
