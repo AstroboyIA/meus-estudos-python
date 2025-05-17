@@ -1,0 +1,7 @@
+#Utilize como ex a frase ' Curso em vídeo Python '
+frase = str(input('Digite uma frase: '))
+#print(len(frase)) -  Ex 1: len serve para saber quantos espaços o "str" ocupa
+#print(frase.count('o')) - Ex 2: frase.count(' ') serve para contar quantas vezes existe o caractere entre ' '.
+#print(frase.count('o',0,13)) - Ex 3: complementando o ex2, adicionado de fatiamento.
+#print(frase.find('deo')) - Ex 4: frase.find(' ') procura onde começa a str em ' '.
+#print(frase.find('Android')) - Ex 5: Ao buscar um str que não exite, o sistema vai te retorna a resposta -1
