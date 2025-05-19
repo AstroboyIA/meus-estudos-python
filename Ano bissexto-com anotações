@@ -1,0 +1,32 @@
+# duas formas mais detalhadas e a final escrita de uma forma menos detalhada.
+# a primeira escrevi sozinho, a segunda com uma dica de IA, a terceira em video aula
+# ao tentar escrever sozinho, ainda não conhecia os comandos 'and' 'or' 'elif'
+"""ano = int(input('Digite o ano atual: '))
+if ano % 400 == 0:
+    print(f'O {ano} ano é bissexto')
+else:
+    if ano % 100 == 0:
+        print(f'O {ano} ano não é bissexto')
+    else:
+        if ano % 4 == 0:
+            print(f'O {ano} ano é bissexto')
+        else:
+            print(f'O {ano} ano não é bissexto')
+            
+            
+ano = int(input('Digite o ano atual: '))
+
+if ano % 400 == 0:
+    print(f'O {ano} ano é bissexto')
+elif ano % 100 == 0:
+    print(f'O {ano} ano não é bissexto')
+elif ano % 4 == 0:
+    print(f'O {ano} ano é bissexto')
+else:
+    print(f'O {ano} ano não é bissexto')"""
+#
+ano = int(input('Digite o ano atual: '))
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print(f'O ano {ano} é bissexto')
+else:
+    print(f'O ano {ano} não é bissexto')
