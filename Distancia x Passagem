@@ -1,0 +1,8 @@
+dist = int(input('Qual a distancia da sua viagem: '))
+if dist <= 200:
+    print(f'Você está prestes a ir para uma viagem de {dist}KM!')
+    print(f'E o preço da sua passagem é de R${(dist*0.50):.2f}')
+else:
+    print(f'Você está prestes a ir para uma viagem de {dist}KM!')
+    print(f'O valor da passagem é R${(dist*0.45):.2f}')
+print('Tenha uma boa viagem!')
