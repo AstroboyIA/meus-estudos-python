@@ -1,0 +1,19 @@
+from time import sleep
+vel = int(input('Qual a velocidade atual do veiculo?: '))
+if vel > 80:
+    print()
+    print('PENSANDO...')
+    sleep(2)
+    print()
+    print('Você foi multado! O limite de velocidade é de 80KM/H')
+    print()
+    print('CALCULANDO MULTA...')
+    sleep(3)
+    print()
+    print('A sua multa vai chegar no valor de {:.2f}R$.'.format((vel-80)*7))
+else:
+    print()
+    print('PENSANDO...')
+    sleep(1)
+    print()
+    print('Você está dentro do limite de velocidade, tenha uma boa viagem!')
