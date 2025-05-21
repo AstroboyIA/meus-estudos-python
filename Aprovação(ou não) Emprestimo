@@ -1,0 +1,30 @@
+from time import sleep
+print('Para descobrirmos se o seu empréstimo será aprovado ou não precisamos das seguintes informações:')
+finalidade = str(input('Qual a finalidade do seu empréstimo?: ')).strip()
+finalidade = finalidade.upper()
+print('Enviando informações para analise...')
+sleep(5)
+if 'CASA' in finalidade:
+    print('Agora precisamos de mais algumas informações: ')
+    vlr = (input('Qual o valor da casa?: '))
+    sal = (input('Qual o seu salário?: '))
+    tmp = (input('Em quantos anos você deseja pagar?: '))
+    print('Calculando...')
+    sleep(2)
+    vlr = vlr.replace('.', '')
+    vlr = vlr.replace(',', '.')
+    vlr = float(vlr)
+    sal = sal.replace('.', '')
+    sal = sal.replace(',', '.')
+    sal = float(sal)
+    tmp = tmp.replace(',', '.')
+    tmp = float(tmp)
+    prest = vlr/(tmp*12)
+    if prest > sal*(30/100):
+        print('Infelizmente seu empréstimo está negado.')
+    else:
+        print('Seu empréstimo está aprovado!')
+        print('Meus parabéns!!!')
+
+else:
+    print('Infelizmente não estamos disponibilizando empréstimos para essa finalidade no momento.')
