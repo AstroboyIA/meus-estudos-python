@@ -1,0 +1,14 @@
+from datetime import date
+print('A confederação Nacional de natação está com uma nova classificação de categoria para os atletas, para classificar o seu atleta responda as perguntas.')
+nsc = int(input('Digite o ano de nascimento do seu atleta: '))
+idade = date.today().year - nsc
+if idade < 10:
+    print('Seu atleta está na categoria MIRIM')
+elif idade > 10 and idade < 14:
+    print('Seu atleta está na categoria INFANTIL')
+elif idade > 14 and idade < 20:
+    print('Seu atleta está na categoria JUNIOR')
+elif idade == 20:
+    print('Seu atleta está na categoria SÉNIOR')
+elif idade > 20:
+    print('Seu atleta está na cateogira MASTER')
