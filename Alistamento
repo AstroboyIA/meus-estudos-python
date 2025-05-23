@@ -1,0 +1,16 @@
+from datetime import date
+ano = int(input('Digite o seu ano de nascimento: '))
+dif = date.today().year - ano
+atr = dif - 18
+if atr < 0:
+    atr = abs(atr)
+if dif  == 18:
+    print('Já está na hora de se alistar!')
+elif dif > 18 and atr == 1:
+    print(f'Já passou dá hora de se alistar e você está atrasado em {atr} ano.')
+elif dif > 18 and atr != 1:
+    print(f'Já passou dá hora de se alistar e você está atrasado em {atr} anos.')
+elif dif < 18 and atr == 1:
+    print(f'Você ainda não precisa se alistar pois falta {atr} ano.')
+elif dif < 18 and atr != 1:
+    print(f'Você ainda não precisa se alistas pous faltam {atr} anos.')
