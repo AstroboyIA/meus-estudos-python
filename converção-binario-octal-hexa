@@ -1,0 +1,14 @@
+num = int(input('Digite um número: '))
+print ('Escolha a base de conversão: ')
+print ('B para Binário')
+print ('O para Octal')
+print ('H para Hexadecimal')
+convert = input('Qual a sua conversão?: ').upper().strip()
+if convert == 'B':
+    print(bin(num))
+elif convert == 'O':
+    print(oct(num))
+elif convert == 'H':
+    print(hex(num))
+else:
+    print('Opção invalida')
